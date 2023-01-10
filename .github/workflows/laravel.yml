@@ -18,4 +18,4 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           host: ${{ secrets.SSH_HOST }}
           password: ${{ secrets.SSH_PASSWORD }}
-          script: 'cd /var/www/luis/linux && ./server_deploy.sh'
+          script: 'cd /var/www/luis/linux && chmod u+x ./server_deploy.sh && ./server_deploy.sh'
