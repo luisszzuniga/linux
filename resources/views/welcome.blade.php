@@ -21,6 +21,21 @@
         </style>
     </head>
     <body class="antialiased">
-        <h1>Luis laravel</h1>
+        <h1>Liste des utilisateurs</h1>
+
+        <table>
+            <thead>
+                <th>Email</th>
+                <th>Nom</th>
+            </thead>
+            <tbody>
+                @foreach ($users as $user)
+                    <tr>
+                        <td>{{ $user->email }}</td>
+                        <td>{{ $user->name }}</td>
+                    </tr>
+                @endforeach
+            </tbody>
+        </table>
     </body>
 </html>
