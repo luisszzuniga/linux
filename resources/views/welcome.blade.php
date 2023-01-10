@@ -27,12 +27,14 @@
             <thead>
                 <th>Email</th>
                 <th>Nom</th>
+                <th>id</th>
             </thead>
             <tbody>
                 @foreach ($users as $user)
                     <tr>
                         <td>{{ $user->email }}</td>
                         <td>{{ $user->name }}</td>
+                        <td>{{ $user->id }}</td>
                     </tr>
                 @endforeach
             </tbody>
