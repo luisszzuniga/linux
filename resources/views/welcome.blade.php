@@ -21,7 +21,7 @@
         </style>
     </head>
     <body class="antialiased">
-        <h1>Liste des utilisateurs</h1>
+        <h1>Liste des utilisateurs de ce site</h1>
 
         <table>
             <thead>
